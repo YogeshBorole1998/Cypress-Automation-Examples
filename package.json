@@ -1,0 +1,33 @@
+{
+  "name": "cypress-udemy-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "node_modules\\.bin\\cypress open",
+    "cypress:run": "node_modules\\.bin\\cypress run",
+    "cypress:run:headless": "npm run cypress:run --headless",
+    "cypress:run:chrome": "node_modules\\.bin\\cypress run --browser chrome",
+    "cypress:run:firefox": "node_modules\\.bin\\cypress run --browser firefox"
+  },
+  "author": "Yogesh Borole",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.2",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.0",
+    "cypress-sql-server": "^1.0.0",
+    "mocha": "^10.1.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "multiple-cucumber-html-reporter": "^3.0.1",
+    "neat-csv": "5.1.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "convert-excel-to-json": "^1.7.0"
+  }
+}
