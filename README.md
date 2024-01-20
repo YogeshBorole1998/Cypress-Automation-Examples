@@ -23,7 +23,15 @@ Welcome to the Cypress Automation Examples repository. This repository contains 
 
 ## Introduction
 
-This repository provides practical examples of Cypress usage for automated testing. Cypress is a powerful end-to-end testing framework for modern web applications.
+- This repository provides practical examples of Cypress usage for automated testing. Cypress is a powerful end-to-end testing framework for modern web applications.
+- Cypress is JavaScript End to End Testing Framework. It's fast, easy, and reliable testing tool for anything that runs in a browser.
+- Cypress is a next generation front end testing tool built for the modern web. We address the key pain points developers and QA engineers face when testing modern applications.
+- Test-Runner --> Free (Locally Installed) & Dashboard --> Paid
+- Cypress works on top on node.js environment & comes package as npm module.
+- 
+- Difference between Selenium & Cypress : <br></br>
+![image](https://github.com/YogeshBorole1998/Cypress-Automation-Examples/assets/104203768/8990ea53-1f49-4521-98c6-6d081280a7d9)
+
 
 ## Installation
 
