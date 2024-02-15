@@ -35,7 +35,6 @@ Welcome to the Cypress Automation Examples repository. This repository contains 
 3. `npm i` - Install all the dependencies
 4. There are a lot dependencies that are not updated frequently in parallel with cypress. So while installing if you are seeing conflicts use`npm i --force`.
 5. Run `npx cypress open` to execute the tests in Test Runner | Run `npx cypress run` to execute the tests in CLI
-6. To create HTML reports execute first `npm run test:cli` and then `npm run create:html:report`
 
 ## Table of Contents
 
