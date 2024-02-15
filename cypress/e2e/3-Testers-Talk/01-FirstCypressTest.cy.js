@@ -2,7 +2,7 @@
 
 describe('YouTube Search Test Suite', function () {
 
-    it('should display search results for "Cypress by Testers Talk"', function () {
+    it('TC054: should display search results for "Cypress by Testers Talk"', function () {
 
         cy.log('Test started: Navigating to YouTube');
         cy.visit('https://www.youtube.com/');

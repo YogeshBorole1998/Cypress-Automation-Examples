@@ -7,7 +7,7 @@ describe("Multiple Window Handle", () => {
         cy.visit("https://test.qatechhub.com/window-handling/")
     })
 
-    it("TC#1 - Verify href and target attributes", () => {
+    it("TC102: Verify href and target attributes", () => {
         // Alias the "Click Here" button for easier reference
         cy.contains("a", "Click Here").as('button')
 
@@ -18,7 +18,7 @@ describe("Multiple Window Handle", () => {
         cy.get("@button").should("have.attr", "target").and("equal", "_blank")
     })
 
-    it("Navigate to the target page by removing the 'target' attribute", () => {
+    it("TC103: Navigate to the target page by removing the 'target' attribute", () => {
         // Alias the "Click Here" button for easier reference
         cy.contains("a", "Click Here").as('button')
 

@@ -1,6 +1,6 @@
 
 describe('API Tests', () => {
-    it('should make a GET request', () => {
+    it('TC072: should make a GET request', () => {
         cy.request('https://jsonplaceholder.typicode.com/posts/1')
             .should((response) => {
                 expect(response.status).to.eq(200);
@@ -11,7 +11,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should make a POST request', () => {
+    it('TC073: should make a POST request', () => {
         const payload = {
             title: 'foo',
             body: 'bar',
@@ -28,7 +28,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should make chained requests', () => {
+    it('TC074: should make chained requests', () => {
         cy.request('https://jsonplaceholder.typicode.com/posts/1')
             .then((response1) => {
                 cy.request(`https://jsonplaceholder.typicode.com/comments?postId=${response1.body.id}`)
@@ -40,7 +40,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should validate response headers', () => {
+    it('TC075: should validate response headers', () => {
         cy.request('https://jsonplaceholder.typicode.com/posts/1')
             .should((response) => {
                 expect(response.status).to.eq(200);
@@ -50,7 +50,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should use fixtures for request payload', () => {
+    it('TC076: should use fixtures for request payload', () => {
         cy.fixture('postPayload.json').then((payload) => {
             cy.request('POST', 'https://jsonplaceholder.typicode.com/posts', payload)
                 .should((response) => {
@@ -60,7 +60,7 @@ describe('API Tests', () => {
         });
     });
 
-    it('should make a GET request with query parameters', () => {
+    it('TC077: should make a GET request with query parameters', () => {
         const postId = 1;
 
         cy.request(`https://jsonplaceholder.typicode.com/posts/${postId}`)
@@ -71,7 +71,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should make a DELETE request', () => {
+    it('TC078: should make a DELETE request', () => {
         const postIdToDelete = 1;
 
         cy.request('DELETE', `https://jsonplaceholder.typicode.com/posts/${postIdToDelete}`)
@@ -80,7 +80,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should make a PUT request with request payload', () => {
+    it('TC079: should make a PUT request with request payload', () => {
         const postIdToUpdate = 1;
         const updatedPayload = {
             title: 'Updated Title',
@@ -95,7 +95,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should validate response time', () => {
+    it('TC080: should validate response time', () => {
         cy.request('https://jsonplaceholder.typicode.com/posts/1')
             .should((response) => {
                 expect(response.status).to.eq(200);
@@ -103,7 +103,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should chain requests and perform assertions', () => {
+    it('TC081: should chain requests and perform assertions', () => {
         cy.request('https://jsonplaceholder.typicode.com/posts/1')
             .then((response1) => {
                 expect(response1.status).to.eq(200);
@@ -118,7 +118,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should use custom command to create a post', () => {
+    it('TC082: should use custom command to create a post', () => {
         const postPayload = {
             title: 'Custom Command Post',
             body: 'Creating a post using a custom command.',
@@ -128,7 +128,7 @@ describe('API Tests', () => {
         cy.createPost(postPayload);
     });
 
-    it('should retry a request and handle timeouts', () => {
+    it('TC083: should retry a request and handle timeouts', () => {
         cy.request({
             method: 'GET',
             url: 'https://jsonplaceholder.typicode.com/posts/1',
@@ -158,7 +158,7 @@ describe('API Tests', () => {
         });
     });
 
-    it('should make a GET request using environment variable', () => {
+    it('TC084: should make a GET request using environment variable', () => {
         const apiUrl = Cypress.env('API_URL') || 'https://jsonplaceholder.typicode.com';
 
         cy.request(`${apiUrl}/posts/1`)
@@ -167,7 +167,7 @@ describe('API Tests', () => {
             });
     });
 
-    it('should test paginated data', () => {
+    it('TC085: should test paginated data', () => {
         const pageSize = 10;
 
         cy.request('https://jsonplaceholder.typicode.com/posts?_page=1&_limit=10')

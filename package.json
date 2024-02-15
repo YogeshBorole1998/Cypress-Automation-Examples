@@ -14,9 +14,14 @@
   "author": "Yogesh Borole",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.2",
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.6.3",
+    "cypress-downloadfile": "^1.2.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-if": "^1.12.0",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.0",
+    "cypress-recurse": "^1.35.2",
     "cypress-sql-server": "^1.0.0",
     "cypress-xpath": "^2.0.1",
     "mocha": "^10.1.0",
@@ -29,6 +34,12 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
     "@cypress/browserify-preprocessor": "^3.0.2",
-    "convert-excel-to-json": "^1.7.0"
+    "@nuintun/qrcode": "^3.4.0",
+    "@zxing/browser": "^0.1.4",
+    "@zxing/library": "^0.20.0",
+    "convert-excel-to-json": "^1.7.0",
+    "cypress-drag-drop": "^1.1.1",
+    "cypress-real-events": "^1.11.0",
+    "otpauth": "^9.2.2"
   }
 }

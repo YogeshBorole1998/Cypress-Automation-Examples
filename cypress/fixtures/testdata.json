@@ -1,0 +1,21 @@
+{
+    "username": "Admin",
+    "password": "admin123",
+    "versionInfo": "OrangeHRM OS 5.6",
+    "welcomeText": "James Ryan",
+    "quickLaunch": [
+        "Assign Leave",
+        "Leave List",
+        "Timesheets",
+        "Apply Leave",
+        "My Leave",
+        "My Timesheet"
+    ],
+    "empDistPieChart": [
+        "40%",
+        "20%",
+        "13%",
+        "13%",
+        "13%"
+    ]
+}

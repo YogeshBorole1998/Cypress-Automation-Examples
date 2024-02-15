@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/> 
 
 describe('API Interaction Test Suite', function () {
-    it('Interacts with the Angular App and Modifies API Response', function () {
+    it('TC068: Interacts with the Angular App and Modifies API Response', function () {
 
         // Intercept the API request to modify its response
         cy.intercept(
@@ -34,7 +34,7 @@ describe('API Interaction Test Suite', function () {
 });
 
 describe('Integration Testing with Front end and Back End response validation assertions', function () {
-    it('Verify length of response array is equal to rows of the table', function () {
+    it('TC069: Verify length of response array is equal to rows of the table', function () {
         cy.intercept(
             {
                 method: 'GET',
@@ -65,7 +65,7 @@ describe('Integration Testing with Front end and Back End response validation as
 });
 
 describe('Security Scenarios: Intercepting HTTP Request Details', function () {
-    it('Modifying Request URL to Simulate Unauthorized Access', function () {
+    it('TC070: Modifying Request URL to Simulate Unauthorized Access', function () {
 
         // Visit the Angular app that triggers the intercepted API request
         cy.visit("https://rahulshettyacademy.com/angularAppdemo/");
@@ -107,7 +107,7 @@ describe('Security Scenarios: Intercepting HTTP Request Details', function () {
 });
 
 describe('Direct API Interaction: Modifying Request to Add a Book', function () {
-    it('Successfully Adds a Book with Modified Request', function () {
+    it('TC071: Successfully Adds a Book with Modified Request', function () {
 
         // Make a POST request directly to the API to add a book with modified details
         cy.request('POST', 'http://216.10.245.166/Library/Addbook.php', {

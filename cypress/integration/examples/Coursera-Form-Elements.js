@@ -13,7 +13,7 @@ describe("Form Elements", function () {
         })
     })
 
-    it("Form Element Test", () => {
+    it("TC101: Form Element Test", () => {
         // Fill in the first name
         cy.get("#wpforms-49-field_1").type(formData.firstName)
 

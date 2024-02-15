@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/> 
 
 describe('My First Test Suite', function () {
-    it('My first test case', function () {
+    it('TC111: My first test case', function () {
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
 
         // Selenium get hit URL in Browser. but In Cypress get act like findElement of selenium.
@@ -48,7 +48,7 @@ describe('My First Test Suite', function () {
 
 
 describe('My First Duplicate Test Suite in different way', () => {
-    it('My first duplicate test case', () => {
+    it('TC112: My first duplicate test case', () => {
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
 
         // Selenium get hit URL in Browser. but In Cypress get act like findElement of selenium.
@@ -60,7 +60,7 @@ describe('My First Duplicate Test Suite in different way', () => {
 
 
 describe('Handing Async promises with Cypress', function () {
-    it('Adding products to cart with aliasing', function () {
+    it('TC113: Adding products to cart with aliasing', function () {
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
         cy.get('.search-keyword').type('ca')
         cy.wait(2000)
@@ -88,7 +88,7 @@ describe('Handing Async promises with Cypress', function () {
 
 
 describe('Practise test with all necessary validations', () => {
-    it('My first assignment test case', () => {
+    it('TC114: My first assignment test case', () => {
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
 
         // Type 'ca' in the search box

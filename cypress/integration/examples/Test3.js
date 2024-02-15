@@ -38,7 +38,7 @@ describe('Handling Child Windows', function () {
 
 
 describe('Handling Web tables', function () {
-    it('Should handle Web tables using each command', function () {
+    it('TC119: Should handle Web tables using each command', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
         cy.get('tr td:nth-child(2)').each(($e1, index, $list) => {
@@ -57,7 +57,7 @@ describe('Handling Web tables', function () {
 
 
 describe('Handling Mouse hover popups', function () {
-    it('Should handle Mouse hover', function () {
+    it('TC120: Should handle Mouse hover', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
         // // Using JQuery - open the popup then Click

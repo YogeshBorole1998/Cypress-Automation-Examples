@@ -2,7 +2,7 @@
 
 // Test suite to validate JWT session management
 describe('JWT Session Management Test Suite', function () {
-    it('Logs in through API and sets token in local storage', function () {
+    it('TC109: Logs in through API and sets token in local storage', function () {
 
         // Log in through API and obtain the authentication token
         cy.loginAPI().then(function () {
@@ -20,7 +20,7 @@ describe('JWT Session Management Test Suite', function () {
 
 // Test suite to validate the end-to-end flow of purchasing an order with UI Script
 describe('End-to-End Purchase Order Flow with UI Script', function () {
-    it('Completes the entire process of purchasing an order', function () {
+    it('TC110: Completes the entire process of purchasing an order', function () {
 
         // Log in through API and obtain the authentication token
         cy.loginAPI().then(function () {

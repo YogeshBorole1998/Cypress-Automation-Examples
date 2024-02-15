@@ -4,7 +4,7 @@ import 'cypress-iframe';
 /// <reference types="Cypress-iframe"/> 
 
 describe('Handling Frames in Cypress', function () {
-    it('Validate that user should be able to write a text inside the available area', () => {
+    it('TC121: Validate that user should be able to write a text inside the available area', () => {
 
         cy.visit('https://the-internet.herokuapp.com/tinymce');
         cy.get('#mce_0_ifr').then(function ($iframe) {
@@ -18,7 +18,7 @@ describe('Handling Frames in Cypress', function () {
         })
     })
 
-    it('iFrame Test Suite', () => {
+    it('TC122: iFrame Test Suite', () => {
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.frameLoaded('#courses-iframe')
         cy.iframe().find('li.dropdown').eq(1).invoke('show')

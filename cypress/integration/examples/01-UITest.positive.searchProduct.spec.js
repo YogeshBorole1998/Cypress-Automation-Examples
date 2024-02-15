@@ -4,7 +4,7 @@ import SearchResultsPage from './PageObjects/searchResultsPage'
 const homePage = new HomePage();
 
 describe('Google Market tests', () => {
-    it('Positive: User is able to find product by name C57', () => {
+    it('TC067: Positive: User is able to find product by name C57', () => {
         cy.fixture('product').then(productData => {
             homePage.open()
             cy.log('WHEN User clicks search icon')

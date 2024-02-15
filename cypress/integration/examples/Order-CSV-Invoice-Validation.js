@@ -5,7 +5,7 @@ let productName, productPrice = null;
 
 // Test suite to validate parsing and validation of downloaded CSV file
 describe('CSV File Parsing and Validation', function () {
-    it('Should parse downloaded CSV file and validate product details', function () {
+    it('TC107: Should parse downloaded CSV file and validate product details', function () {
         // Perform API login and visit the website
         cy.loginAPI().then(function () {
             cy.visit('https://rahulshettyacademy.com/client/', {

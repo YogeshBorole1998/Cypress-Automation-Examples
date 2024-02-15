@@ -7,7 +7,7 @@ describe("Amazon Project", () => {
         cy.visit("https://amazon.in")
     })
 
-    it("Search Product", () => {
+    it("TC099: Search Product", () => {
         // Select the 'Electronics' category from the dropdown
         cy.get("#searchDropdownBox").select("Electronics", { force: true })
 

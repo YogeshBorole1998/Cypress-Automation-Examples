@@ -2,13 +2,13 @@
 
 describe('Google Search Interaction Test Suite', function () {
 
-    it('should interact with elements on the Google Search page', function () {
+    it('TC056: should interact with elements on the Google Search page', function () {
 
         // Visit Google search page
         cy.visit('https://www.google.com/search?q=javascript+by+testers+talk');
 
         // Log text from the textarea
-        cy.get('textarea[type="search"]').then((element) => {
+        cy.get('textarea[name="q"]').first().then((element) => {
             cy.log('Text from Google Search Input: ' + element.text());
         });
 

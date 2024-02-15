@@ -4,7 +4,7 @@ let productName, productPrice = null;
 
 // Test suite to validate parsing and validation of downloaded Excel file
 describe('Excel File Parsing and Validation', function () {
-    it('Should parse downloaded Excel file and validate product details', function () {
+    it('TC108: Should parse downloaded Excel file and validate product details', function () {
         // Perform API login and visit the website
         cy.loginAPI().then(function () {
             cy.visit('https://rahulshettyacademy.com/client/', {

@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 describe("Validate CRUD operation via API using Cypress", () => {
-    it('Should check and validate the API', () => {
+    it('TC086: Should check and validate the API', () => {
         cy.request({
             method: 'GET',
             url: 'https://restful-booker.herokuapp.com/ping'
@@ -18,7 +18,7 @@ describe("Validate CRUD operation via API using Cypress", () => {
         })
     })
 
-    it('Create,Read,Update,Delete a New Booking', () => {
+    it('TC087: Create,Read,Update,Delete a New Booking', () => {
 
         //Generate Token
         let token

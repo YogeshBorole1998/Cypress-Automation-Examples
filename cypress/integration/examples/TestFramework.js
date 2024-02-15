@@ -13,7 +13,7 @@ describe('Automation using Hooks', function () {
         });
     });
 
-    it('Should fill out and verify the form with user data', function () {
+    it('TC123: Should fill out and verify the form with user data', function () {
 
         cy.visit(Cypress.env('url') + '/angularpractice/');
 

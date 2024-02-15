@@ -6,12 +6,12 @@ describe('Data Driven Search Test Suite - Multiple sets of Test Data', function 
     // Iterate over each set of test data
     jsonData.forEach((data, index) => {
         // Use a dynamic test name based on the test data
-        it(`should perform a search for "${data.name}" (Test Set ${index + 1})`, function () {
+        it(`TC064: should perform a search for "${data.name}" (Test Set ${index + 1})`, function () {
             // Visit Google search page
             cy.visit('https://www.google.com/search?q=javascript+by+testers+talk');
 
             // Clear the search textarea
-            cy.get('textarea[type="search"]').clear();
+            cy.get('textarea[name="q"]').clear();
 
             // Type product name from the test data and perform a search
             if (data.name) {

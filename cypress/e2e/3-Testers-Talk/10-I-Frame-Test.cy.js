@@ -3,7 +3,7 @@ import 'cypress-iframe';
 
 describe('Cypress iFrame Interaction Test Suite', function () {
 
-    it('should interact with elements inside an iFrame on the Cypress Commands and Actions page', function () {
+    it('TC062: should interact with elements inside an iFrame on the Cypress Commands and Actions page', function () {
 
         // Step 1: Visit the Cypress Commands and Actions page containing an iFrame
         cy.visit('./i-frame-demo.html');

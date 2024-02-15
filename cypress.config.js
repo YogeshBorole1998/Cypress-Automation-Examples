@@ -3,6 +3,7 @@ const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-pr
 const { preprocessor } = require("@badeball/cypress-cucumber-preprocessor/browserify");
 const excelToJson = require('convert-excel-to-json');
 const fs = require('fs');
+const { downloadFile } = require('cypress-downloadfile/lib/addPlugin')
 
 // Async function to set up Cypress events and configurations
 async function setupNodeEvents(on, config) {
@@ -27,6 +28,8 @@ async function setupNodeEvents(on, config) {
     }
   });
 
+  on('task', { downloadFile }); //Cypress file Download
+
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;
 }
@@ -37,7 +40,8 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     // Specify the pattern for test files
-    specPattern: 'cypress/e2e/Testers-Talk/*.js',
+    specPattern: ['cypress/e2e/3-Testers-Talk/*.js','cypress/e2e/4-Self-Practice-Cypress-Automation/*.js', 'cypress/integration/examples/*.js'],
+    // specPattern: 'cypress/integration/examples/*.js',
   },
 
   // Environment variables

@@ -24,3 +24,8 @@ require('cypress-xpath')
 
 // Report Generation
 import 'cypress-mochawesome-reporter/register'
+
+// Import commands.js using ES2015 syntax:
+import '../e2e/4-Self-Practice-Cypress-Automation/Utils/Login'
+import '../e2e/4-Self-Practice-Cypress-Automation/Utils/Dashboard'
+import "cypress-real-events/support"

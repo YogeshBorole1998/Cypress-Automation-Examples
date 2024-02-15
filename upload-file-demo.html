@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Example</title>
+    <style>
+        #progressContainer {
+            width: 300px;
+            height: 30px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        #progressBar {
+            width: 0;
+            height: 100%;
+            background-color: #4CAF50;
+            position: absolute;
+        }
+
+        #progressText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="file" id="fileInput">
+    <div id="uploadSuccessMessage" style="display:none;">File upload successful!</div>
+    <div id="progressContainer">
+        <div id="progressBar"></div>
+        <div id="progressText" >Processing: 0%</div>
+    </div>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function () {
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+
+            let progress = 0;
+            const intervalId = setInterval(() => {
+                progress += 5; // Simulate progress increase
+                progressBar.style.width = `${progress}%`;
+                progressText.innerText = `Processing: ${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(intervalId);
+                    document.getElementById('uploadSuccessMessage').style.display = 'block';
+                }
+            }, 200); // Simulating progress update every 200 milliseconds
+        });
+    </script>
+</body>
+
+</html>

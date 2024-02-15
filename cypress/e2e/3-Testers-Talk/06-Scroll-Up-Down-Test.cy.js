@@ -3,7 +3,7 @@ import 'cypress-iframe';
 
 describe('YouTube Video Interaction Test Suite', function () {
 
-    it('should interact with elements on the YouTube video page', function () {
+    it('TC060: should interact with elements on the YouTube video page', function () {
 
         // Step 1: Visit the YouTube video page with an iFrame
         cy.visit('https://www.youtube.com/watch?v=X46I88W6uIE&list=PLUeDIlio4THFLrS29tJnP9yz-QKhn4mdB');

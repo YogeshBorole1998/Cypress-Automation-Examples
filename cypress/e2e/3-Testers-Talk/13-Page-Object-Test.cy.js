@@ -14,7 +14,7 @@ describe('Page Object Modal Test Suite', function () {
     // Create an instance of the HomePage class
     const homePage = new HomePage();
 
-    it('should navigate to YouTube, search for API testing, go to the playlist, and verify its title', function () {
+    it('TC065: should navigate to YouTube, search for API testing, go to the playlist, and verify its title', function () {
         // Step 1: Open YouTube
         homePage.visit();
 

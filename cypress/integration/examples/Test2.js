@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/> 
 
 describe('Handling Web Controls UI', function () {
-    it('Handling Checkboxes test case', function () {
+    it('TC115: Handling Checkboxes test case', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
         // Handling Checkboxes
@@ -16,19 +16,29 @@ describe('Handling Web Controls UI', function () {
         // checbox 2 & 3 will checked
         cy.get('input[type="checkBox"]').check(['option2', 'option3'])
     });
+
+    it('TC116: Handling Multiple Checkboxes test case', function () {
+        cy.visit('https://www.lambdatest.com/selenium-playground/checkbox-demo');
+
+        // With force
+        cy.get('[type="checkbox"]').as('checkboxes').check({ force: true });
+
+        // Without force
+        // cy.get('[type="checkbox"]: enabled').as('checkboxes').check();
+    });
 });
 
 
 describe('Handling Web Controls UI', function () {
-    it('Handling static and dynamic dropdown test case', function () {
+    it('TC117: Handling static and dynamic dropdown test case', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
-        // Handling static dropdown 
+        // Handling static dropdown
         // select is the tagname for any static dropdown. and you can pass either value or option to select
         cy.get('select').select('option2').should('have.value', 'option2')
         cy.get('select').select('Option3').should('have.value', 'option3')
 
-        // Handling dynamic dropdown 
+        // Handling dynamic dropdown
         cy.get('#autocomplete').type('ind')
         cy.get('.ui-menu-item div').each(($el, index, $list) => {
             if ($el.text() === 'India') {
@@ -43,7 +53,7 @@ describe('Handling Web Controls UI', function () {
 
 
 describe('Handling Web Controls UI', function () {
-    it('Handling Visible and invisible elements using Assertions', function () {
+    it('TC118: Handling Visible and invisible elements using Assertions', function () {
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
         cy.get('#displayed-text').should('be.visible')

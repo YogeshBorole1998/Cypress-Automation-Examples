@@ -8,7 +8,7 @@ describe("IFrame and Drag and Drop operation", () => {
         cy.visit("https://jqueryui.com/droppable/");
     });
 
-    it("Drag and Drop with IFrame", () => {
+    it("TC100: Drag and Drop with IFrame", () => {
         // Accessing the IFrame to interact with draggable and droppable elements
         cy.get(".demo-frame").then($frame => {
             // Finding the body within the IFrame
