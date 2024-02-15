@@ -86,5 +86,4 @@ Welcome to the Cypress Automation Examples repository. This repository contains 
 * If a test case is failed, then the assertion error, screenshot and video gets attached to report automatically. 
   * When a test retries, Cypress will continue to take screenshots for each failed attempt or cy.screenshot() and suffix each new screenshot with (attempt n), corresponding to the current retry attempt number.
 
-![127 0 0 1_5500_cypress_reports_html_index html(iPad Air)](https://github.com/YogeshBorole1998/Cypress-Automation-Examples/assets/104203768/cda57585-36e3-496e-8c57-e5ebbd1636a0)
-
+![127 0 0 1_5500_cypress_reports_html_index html(iPad Air) (1)](https://github.com/YogeshBorole1998/Cypress-Automation-Examples/assets/104203768/0300cc89-f040-4015-8b4f-8f146394ee5f)
