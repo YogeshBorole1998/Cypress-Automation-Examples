@@ -36,18 +36,6 @@ Welcome to the Cypress Automation Examples repository. This repository contains 
 4. There are a lot dependencies that are not updated frequently in parallel with cypress. So while installing if you are seeing conflicts use`npm i --force`.
 5. Run `npx cypress open` to execute the tests in Test Runner | Run `npx cypress run` to execute the tests in CLI
 
-## Table of Contents
-
-| Section            | Description                                     |
-| ------------------ | ----------------------------------------------- |
-| [Introduction](#introduction) | Overview of the Cypress Automation Examples repository. |
-| [Installation](#installation) | Steps to clone the repository and install dependencies. |
-| [Usage](#usage)            | Instructions on how to run Cypress tests.           |
-| [Folder Structure](#folder-structure) | Overview of the project's directory structure.      |
-| [Contributing](#contributing)    | Guidelines for contributing to the repository.     |
-| [License](#license)         | Information about the project's license.           |
-
-
 ## Introduction
 
 - This repository provides practical examples of Cypress usage for automated testing. Cypress is a powerful end-to-end testing framework for modern web applications.
