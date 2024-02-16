@@ -18,7 +18,7 @@ describe('Handling Frames in Cypress', function () {
         })
     })
 
-    it('TC122: iFrame Test Suite', () => {
+    it('TC122: iFrame Interaction Test Suite', () => {
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.frameLoaded('#courses-iframe')
         cy.iframe().find('li.dropdown').eq(1).invoke('show')
